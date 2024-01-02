@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>New Phone</title>
+<style>
+    * {
+        box-sizing: border-box;
+    }
+    body {
+        background-color: black;
+        color: white;
+        margin: 0;
+    }
+    .nav-menu {
+        width: 15%;
+        margin-left: auto;
+        margin-right: auto;
+        padding: 30px 80px;
+        margin-bottom: 40px;
+    }
+    .name {
+        font-size: 16px;
+    }
+    .name-img {
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        margin-right: 10px;
+    }
+    .container {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .sms {
+        margin: 10px;
+    }
+    .sms-left-from{
+        text-align: left;
+        background-color: #333333;
+        margin-top: 15px;
+        margin-bottom: 7px;
+        padding: 15px;
+        border-radius: 20px;
+        max-width: 210px;
+        align-self: flex-start;
+    }
+    .sms-right-to{
+        float: right;
+        text-align: right;
+        background-color: darkblue;
+        margin-top: 15px;
+        margin-bottom: 7px;
+        padding: 15px;
+        border-radius: 20px;
+        max-width: 210px;
+        align-self: flex-end;
+    }
+    img {
+        max-width: 200px;
+    }
+    #img-response {
+        max-width: 250px;
+    }
+
+    
+</style>
+</head>
+<body>
+    <div class="nav-menu">
+        <img class="name-img" src="phil.jpg" alt="Unknown Contact">
+        <h1 class="name">Unknown</h1>
+    </div>
+    <div class="sms container">
+        <div class="sms-left-from">Hi, want to meet for lunch?</div>
+        <div class="sms-right-to">New Phone, who's this?</div>
+        <div class="sms-left-from">It's Phil, Leela.</div>
+        <div class="sms-right-to">Sorry, you have the wrong number.</div>
+        <div id="img-response" class="sms-left-from"><img src="whoDis.jpeg" alt="FR? That's sus"></div>
+    </div>
+</body>
+</html>
